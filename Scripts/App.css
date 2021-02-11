@@ -1,0 +1,18 @@
+.App {
+
+  width: 100vw;
+  height:100vh;
+  background-color:brown;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
+.Sidebar{
+  height:100;
+  width:250px;
+  background-color: #2F4050;
+}
+
