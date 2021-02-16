@@ -9,16 +9,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.close-btn {
-  position: absolute;
-  top: 2%;
-  right: 3%;
-  font-size: 1.5rem;
-  z-index: 1;
-  color: rgb(146, 33, 33);
-  cursor: pointer;
-}
-
 .form-content-left {
   background: linear-gradient(
     90deg,
@@ -61,7 +51,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .form h1 {
@@ -78,43 +67,27 @@
   text-align: start;
   width: 80%;
   margin-bottom: 1rem;
-  color: #fff;
-}
-
-.form-inputs {
-  margin-bottom: 0.5rem;
-  width: 80%;
-}
-
-.form-inputs img username{
-  position: absolute; top: 30%; right: 12%; width: 10%;
+  color: #ffe;
 }
 
 .form-inputs {
   display: flex;
-  width: 100%;
-  margin-bottom: 15px;
-  
+  width: 80%;
+  margin: 5px;
 }
 
 .form-inputs p {
   font-size: 0.8rem;
   margin-top: 0.5rem;
   color: #f00e0e;
-}
-
-.form-label {
-  display: inline-block;
-  font-size: 0.8rem;
-  margin-bottom: 6px;
-  color: #fff;
+  text-align:center;
 }
 
 .form-input {
   display: block;
   padding-left: 10px;
   outline: none;
-  border-radius: 2px;
+  border-radius: 20px;
   height: 40px;
   width: 100%;
   border: none;
