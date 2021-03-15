@@ -8,7 +8,7 @@
   font-family: 'Lato', sans-serif;
   
 }
-.reports,
+
 .products {
   display: flex;
   height: 90vh;
@@ -16,6 +16,16 @@
   justify-content:center;
   font-size: 3rem;
   background:#ffffff ;
+}
+
+.reports{
+  margin: 80px;
+  border: 50px;
+  padding-left: 80px;
+}
+
+.reports.h1{
+  padding-left: 50px;
 }
 .home{
   max-height: fit-content;
