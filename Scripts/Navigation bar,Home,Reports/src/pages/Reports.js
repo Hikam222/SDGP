@@ -3,6 +3,7 @@ import {createStyles,makeStyles,Theme} from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import App from './App.jsx';
+import './Reports.css';
 
 const useStyles = makeStyles((theme: Theme) =>
 createStyles({
@@ -46,13 +47,12 @@ function Reports() {
 
   return (
 <div className="reports">
-      <h2>Reports</h2>
+      <h1 id = "reportHeadding">Reports</h1>
 
      <form className={classes.root} noValidate autoComplete="off">
-       <div className="colour&quantity">
+       <div className="colourAndQuantity">
          <TextField id ="standard-basic" label="Quantity" />
-
-         <div>
+         <div className = "TFDropdown">
            <TextField
                id="standard-select-currency"
                select

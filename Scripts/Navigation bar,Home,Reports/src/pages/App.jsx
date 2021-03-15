@@ -18,7 +18,8 @@ const SearchbarDropdown = (props) => {
             ulRef.current.style.display = 'none';
         });
     }, []);
-    return <div className="search-bar-dropdown">
+    return (
+    <div className="search-bar-dropdown">
         <input id='search-bar' type="text" className="form-control"
                placeholder="Search" ref={inputRef} onChange={onInputChange}/>
         <ul id='results' className="list-group" ref={ulRef}>
@@ -34,6 +35,7 @@ const SearchbarDropdown = (props) => {
             })}
         </ul>
     </div>
+    )
 };
 
 const defaultOptions = [];
@@ -55,7 +57,7 @@ function App() {
         <div className="App container mt-2 mb-3">
             {/*<h1>Search Bar Dropdown</h1>*/}
             <SearchbarDropdown options={options} onInputChange={onInputChange}/>
-            <div className="a">
+            <div className="btnSearch">
                 <button className="btn btn-primary">Search</button>
             </div>
 
