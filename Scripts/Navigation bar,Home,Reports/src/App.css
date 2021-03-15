@@ -18,15 +18,15 @@
   background:#ffffff ;
 }
 
-.reports{
+/* .reports{
   margin: 80px;
   border: 50px;
   padding-left: 80px;
-}
+} */
 
-.reports.h1{
-  padding-left: 50px;
-}
+/* .reports.h1{
+ text-align: center;
+} */
 .home{
   max-height: fit-content;
   min-width: fit-content;
@@ -132,7 +132,7 @@
 Search dropdown
  */
 
-.search-bar-dropdown{
+/* .search-bar-dropdown{
   width: 20em;
 }
 
@@ -144,15 +144,15 @@ Search dropdown
   width: inherit;
 }
 
-.a {
+.btnSearch {
   padding: 10px;
-}
+} */
 
 /*
 ***End***
 Search dropdown
  */
 
-.colour&quantity{
+/* .colour&quantity{
   margin-left: 200px;
-}
+} */
