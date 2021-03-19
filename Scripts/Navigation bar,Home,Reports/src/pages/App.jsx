@@ -1,5 +1,5 @@
 import React,{useState,useRef, useEffect} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
 const SearchbarDropdown = (props) => {
@@ -14,7 +14,7 @@ const SearchbarDropdown = (props) => {
             onInputChange(event);
         });
         document.addEventListener('click',(event) => {
-            console.log('document clicked')
+            console.log('document clicked');
             ulRef.current.style.display = 'none';
         });
     }, []);
@@ -39,11 +39,11 @@ const SearchbarDropdown = (props) => {
 };
 
 const defaultOptions = [];
-for(let i = 0; i < 10;i++){
-    defaultOptions.push(`option ${i}`);
-    defaultOptions.push(`suggestion ${i}`);
-    defaultOptions.push(`advice ${i}`);
-}
+// for(let i = 0; i < 10;i++){
+    defaultOptions.push(`option`);
+    defaultOptions.push(`suggestion`);
+    defaultOptions.push(`advice`);
+// }
 function App() {
 
     const [options,setOptions] = useState([]);
@@ -60,7 +60,6 @@ function App() {
             <div className="btnSearch">
                 <button className="btn btn-primary">Search</button>
             </div>
-
         </div>
     );
 }
