@@ -1,7 +1,10 @@
 from flask import Flask
 app = Flask(__name__)
+@app.route('/')
+def index():
+    return 'HI'
 
-@app.route('/<int:name>')
+@app.route('/<string:name>')
 def greet(name):
     return f'Hello {name}'
 
