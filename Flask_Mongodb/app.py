@@ -55,11 +55,11 @@ def done ():
 @app.route("/action", methods=['POST'])
 def action ():
 	#Adding a Task
-	Unnamed=request.values.get("Unnamed")
+	JobNo=request.values.get("JobNo")
 	ItemCode=request.values.get("ItemCode")
 	ColorGroup=request.values.get("ColorGroup")
 	waste_pecentage=request.values.get("waste_pecentage")
-	todos.insert({ "Unnamed":Unnamed, "ItemCode":ItemCode, "ColorGroup":ColorGroup, "waste_pecentage":waste_pecentage, "done":"no"})
+	todos.insert({ "JobNo":JobNo, "ItemCode":ItemCode, "ColorGroup":ColorGroup, "waste_pecentage":waste_pecentage, "done":"no"})
 	return redirect("/list")
 
 @app.route("/remove")
@@ -78,12 +78,12 @@ def update ():
 @app.route("/action3", methods=['POST'])
 def action3 ():
 	#Updating a Task with various references
-	Unnamed=request.values.get("Unnamed")
+	JobNo=request.values.get("JobNo")
 	ItemCode=request.values.get("ItemCode")
 	ColorGroup=request.values.get("ColorGroup")
 	waste_pecentage=request.values.get("waste_pecentage")
 	id=request.values.get("_id")
-	todos.update({"_id":ObjectId(id)}, {'$set':{ "Unnamed":Unnamed, "ItemCode":ItemCode, "ColorGroup":ColorGroup, "waste_pecentage":waste_pecentage }})
+	todos.update({"_id":ObjectId(id)}, {'$set':{ "JobNo":JobNo, "ItemCode":ItemCode, "ColorGroup":ColorGroup, "waste_pecentage":waste_pecentage }})
 	return redirect("/")
 
 @app.route("/search", methods=['GET'])

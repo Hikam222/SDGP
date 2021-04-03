@@ -23,7 +23,7 @@
 		<td></td><td></td>
 		<td><big><b>Search Reference:</b></big></td>
 		<td><select name="refer" required>
-			<option value="Unnamed">Unnamed</option>
+			<option value="JobNo">JobNo</option>
 			<option value="ItemCode">ItemCode</option>
 			<option value="ColorGroup">ColorGroup</option>
 			<option value="waste_pecentage">waste_pecentage</option>
@@ -38,7 +38,7 @@
 	<table>
 	    <tr id="row">
 	    	<th class="status">Status</th>
-	    	<th class="Unnamed">Unnamed</th>
+	    	<th class="JobNo">JobNo</th>
 	    	<th class="ItemCode">ItemCode</th>
 	    	<th class="ColorGroup">ColorGroup</th>
 	    	<th class="waste_pecentage">waste_pecentage</th>
@@ -48,7 +48,7 @@
 	{% for todo in todos %}
 		<tr class="datas">
 			<td><a href="./done?_id={{ todo['_id'] }}"><input type="image" src="static/images/{{todo['done']}}.png" alt="Submit ME"></a></td>
-			<td class="Unnamed">{{ todo["Unnamed"] }}</td>
+			<td class="JobNo">{{ todo["JobNo"] }}</td>
 			<td class="ItemCode">{{ todo["ItemCode"] }}</td>
 			<td class="ColorGroup">{{ todo["ColorGroup"] }}</td>
 			<td class="waste_pecentage">{{ todo["waste_pecentage"] }}</td>
@@ -67,7 +67,7 @@
 			<td><b><big><label>Add a Task : </label></big></b></td>
 		</tr>
 		<tr>
-		<td><input type="text" name="Unnamed" placeholder="Unnamed" /></td>
+		<td><input type="text" name="JobNo" placeholder="JobNo" /></td>
 		<td><textarea name="ItemCode" rows="1" cols="30" placeholder="ItemCode" required></textarea></td>
 		<td><input type="text" name="ColorGroup" placeholder="ColorGroup" /></td>
 		<td><input type="text" name="waste_pecentage" placeholder="waste_pecentage" /></td>
