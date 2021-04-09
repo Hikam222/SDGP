@@ -1,7 +1,7 @@
 .navbar {
   background: linear-gradient(
     90deg,
-    rgb(0, 232, 236) 100%,
+    rgb(10, 232, 236) 100%,
     rgb(39, 176, 255) 0%
   );
 
@@ -83,4 +83,8 @@
 
 span {
   margin-left: 16px;
+}
+
+.reports {
+  padding-right: 70%;
 }

@@ -8,17 +8,8 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import AutoCompleteText from "./AutoCompleteText/AutoCompleteText";
 import countries from "./AutoCompleteText/countries";
 import {useState,useRef, useEffect} from 'react';
-
-const useStyles = makeStyles((theme: Theme) =>
-createStyles({
-  root:{
-    '& .MuiTextField-root' : {
-      margin:theme.spacing(1),
-      width: '25ch',
-    },
-  },
-}),
-);
+import { Button, Paper } from '@material-ui/core';
+import "./AutoComplete.css";
 
 const currencies = [
   {
@@ -63,8 +54,6 @@ function Reports({userInput,userInput2}) {
 
   const[todo4,setTodo4]=useState([])
 
-  const classes = useStyles();
-
   const [currency, setCurrency] = React.useState('EUR');
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -103,36 +92,79 @@ function Reports({userInput,userInput2}) {
       })
 }
 
+const ProgLang = ["Javascript", "Java", "Python", "Nodejs", "Reactjs"];
+
+  const [searchtext, setSearchtext] = useState("");
+  const [suggest, setSuggest] = useState([]);
+  const [resfound, setResfound] = useState(true);
+  const handleChange1 = (e) => {
+    let searchval = e.target.value;
+    let suggestion = [];
+    if (searchval.length > 0) {
+      suggestion = ProgLang
+        .sort()
+        .filter((e) => e.toLowerCase().includes(searchval.toLowerCase()));
+      setResfound(suggestion.length !== 0 ? true : false);
+    }
+    setSuggest(suggestion);
+    setSearchtext(searchval);
+  };
+
+  const suggestedText = (value) => {
+    console.log(value);
+    setSearchtext(value);
+    setSuggest([]);
+  };
+
+  const getSuggestions = () => {
+    if (suggest.length === 0 && searchtext !== "" && !resfound) {
+      return <p>Search Content Not Found</p>;
+    }
+
+    return (
+      <ul>
+        {suggest.map((item, index) => {
+          return (
+            <div key={index}>
+              <li onClick={() => suggestedText(item)}>{item}</li>
+              {index !== suggest.length - 1 && <hr />}
+            </div>
+          );
+        })}
+      </ul>
+    );
+  };
 
   return (
 <div className="reports">
+
       <h1 id = "reportHeadding">Reports</h1>
 
-     <form className={classes.root} noValidate autoComplete="off" onSubmit={handleFormSubmit}>
-       <div className="colourAndQuantity">
+    <Paper className="paper">
+     <form  noValidate autoComplete="off" onSubmit={handleFormSubmit}>
+       <div className="input-fields-3">
 
-        
-         <div className={classes.root}>
-
-        <div>
-        <TextField
+        {/* quantity field */}
+        <div className="quantity-tf">
+        <TextField 
           required value={userInput} 
           onChange={handleFormChange}
-          label="With normal TextField"
+          label="Quantity"
           id="standard-start-adornment"
-          className={clsx(classes.margin, classes.textField)}
+          style = {{width: "60%"}}
           InputProps={{
             startAdornment: <InputAdornment position="start">Kg</InputAdornment>,
           }}
         />
         </div>
-        </div>
         
-         <div className = "TFDropdown">
+        {/* colour field */}
+         <div className = "colour-tf">
            <TextField
                id="standard-select-currency"
+               style = {{width: "60%"}}
                select
-               label="Select"
+               label="Colour"
                required value={currency}
                onChange={handleChange}
                helperText="Please select colour"
@@ -144,13 +176,28 @@ function Reports({userInput,userInput2}) {
              ))}
            </TextField>
          </div>
+
+          {/* Elastic type field */}
+          <div className="searchcontainer">
+                <input id="suggestion "
+                  type="text"
+                  placeholder="Elastic type    *"
+                  className="search"
+                  value={searchtext}
+                  onChange={handleChange1}
+                />
+                {getSuggestions()}
+         </div>
        </div>
 
-    <div className="type-search">
-      <AutoCompleteText items={countries} />
-    </div>
-      
-     </form>  
+        {/* submit button */}
+         <div className="submitbtn">
+         <Button variant="contained" color="primary">Search</Button>
+        </div>
+
+      </form> 
+      </Paper>
+
      <ul key={todo4.id}>
                        <li>
                            {todo4.response}

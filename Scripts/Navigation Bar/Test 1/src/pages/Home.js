@@ -33,7 +33,7 @@ return (<body>
 
             <div className="homeblog-item">
                 <div className="homeblog-img">
-                    <img src="../img/type1.1.jpg" alt=""/>
+                    <img src="./img/type1.1.jpg" alt="111"/>
                 </div>
                 <div className="homeblog-text">
                    

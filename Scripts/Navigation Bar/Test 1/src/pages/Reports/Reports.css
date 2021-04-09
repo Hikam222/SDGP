@@ -8,12 +8,20 @@
 }
 
 .reports {
-  margin: 2% 0% 0% 0%;
-  padding: 0% 10% 0% 40%;
+  margin: 3% 30% 0% 20%;
+  padding: 0% 0% 0% 0%;
 }
 
 #reportHeadding {
-  padding-left: 7%;
+  padding: 0% 0% 6% 40%;
+}
+
+.input-fields-3 {
+  padding: 5% 0% 1% 10%;
+}
+
+.quantity-tf,.colour-tf {
+  padding-bottom: 6%;
 }
 
 .search-bar-dropdown {
@@ -42,4 +50,12 @@
 
 .type-search {
   padding-left: 2%;
+}
+
+.submitbtn {
+  padding: 5% 0% 3% 42%;
+}
+
+form {
+  padding-left: 20%;
 }
