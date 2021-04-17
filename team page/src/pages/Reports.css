@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    
+  }
+  
+  .reports{
+    margin: 2% 0% 0% 0%;
+    padding: 0% 10% 0% 40%;
+  }
+
+  #reportHeadding{
+    padding-left: 7%;
+   }
+
+   .search-bar-dropdown{
+    width: 20em;
+  }
+  
+  #results{
+    position: absolute;
+  }
+  
+  #search-bar{
+    width: inherit;
+  }
+  
+  .btnSearch {
+    padding: 10px;
+  }
+
+  .colourAndQuantity{
+    padding: 5% 0% 0% 1%;
+  }
+
+  .TFDropdown{
+    padding: 2% 0%;
+  }
+  

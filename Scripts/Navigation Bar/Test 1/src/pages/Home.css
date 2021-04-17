@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900@family=Quicksand:wght@300;400;500;600;700@display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--Quicksand);
+}
+body {
+  line-height: 1.4;
+  color: steelblue;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.homecontainer {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/white.jpg") center/ cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.homenavbar {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.2rem;
+}
+.homenavbar-brand {
+  color: #fff;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1px;
+}
+.homenavbar-nav {
+  padding: 0.8rem 0 0.2rem 0;
+  text-align: center;
+}
+
+.homenavbar-nav a {
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.4rem 0.1rem;
+  letter-spacing: 3px;
+  transition: opacity 0.5s ease;
+}
+.homenavbar-nav a:hover {
+  opacity: 0.7;
+}
+.homebanner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.homebanner-title {
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.2;
+}
+.homebanner-title span {
+  font-family: "Brush Script MT";
+  color: rgba(0, 0, 0, 0.6);
+}
+.homebanner p {
+  padding: 1rem 0 2rem 0;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  word-spacing: 2px;
+  text-align: justify;
+}
+
+/*design*/
+.homedesign {
+  padding: 4.5rem 0;
+}
+.hometitle {
+  text-align: center;
+  padding: 1rem 0;
+}
+.hometitle h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+}
+.hometitle p {
+  text-transform: uppercase;
+  padding: 0.6rem 0;
+}
+.homedesign-content {
+  margin: 2rem 0;
+}
+.homedesign-item {
+  width: 50%;
+  margin: 1.5rem 0;
+}
+.homedesign-img {
+  position: relative;
+  overflow: hidden;
+}
+.homedesign-img::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.homedesign-img {
+  transition: all 0.5s ease;
+}
+/**.homedesign-item:hover img{
+    transform: scale(1.2);
+}*/
+.homedesign-img span:last-of-type {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.homedesign-title {
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.homedesign-title a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*blog*/
+.homeblog {
+  background: #f9f9f9;
+  padding: 4.5rem 0;
+}
+.homeblog-content {
+  margin: 2rem 0;
+}
+.homeblog-img {
+  position: relative;
+}
+
+.homeblog-text {
+  margin: 2.2rem 0;
+  padding: 0 1rem;
+}
+.homeblog-text h2 {
+  font-family: fantasy;
+  padding: 1rem 0;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+.homeblog-text p {
+  font-weight: 300;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  padding-bottom: 1.2rem;
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+  }*/
+  h1{
+    margin: 2% 0% 0% 0%;
+    padding: 0% 10% 0% 40%;
+    font-size:15rem;
+    background: lightgrey;
+
+  }
+ 
+
+  .user *:focus{
+    outline: none;
+  }
+  
+  .user-body .box{
+    box-sizing: border-box;
+    width: 153px;
+    height: 153px;
+    border: 2px solid #3498db;
+    box-shadow: -3px -3px 7px #ffffff73,
+    3px 3px 5px rgba(94,104,121,0.288);
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 50px;
+    overflow: hidden;
+    transition: all 1s;
+  }
+  
+ .user-body .box img{
+     box-sizing: border-box;
+     width: 149px;
+     height:149px;
+     border-radius: 50%;
+     margin: 0;
+     border:5px solid #0082e6;
+     padding: 3px;
+     background-color: white;
+  }
+  .user-body input[type="text"],
+  .user-body input[type="email"]{
+  display:block;
+  box-sizing: border-box;
+  background: none;
+  color: #3498db;
+  margin-bottom: 30px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #0082e6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+.user-body input[type="text"]{
+  margin-top: 25px;
+}
+.user-body input[type="text"]:focus,
+.user-body input[type="email"]:focus{
+  border-bottom: 2px solid #3498db;
+  border-bottom-right-radius: 20px;
+  color: #3498db;
+  transition: 0.2 ease;
+}
+.user-body button{
+  border:1px solid #3498db;
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 0px;
+  transition: all 0.3s;
+}
+.user-body button:hover{
+  transform: scale(1.1);
+}
+.user-body input[type="file"]{
+  display:none;
+}
+.user-body label{
+  box-sizing: border-box;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid #3498db;
+  padding:  2px 15px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.user-body label:hover{
+  background-color: #3498db;
+  color: black;
+}
+.user-body .box:hover{
+  width: 360px;
+  height: 600px;
+  border-radius: 5px;
+}
+.user-body .box:hover img{
+  width: 100px;
+  height: 100px;
+  margin: 20px 31%;
+}
+.user-body   .cancel-btn{
+    float: left; 
+    margin:10px 0 0 18.2%;
+  }
+  .user-body   .done-btn{
+    float: right;
+    margin:10px 18.2% 0 0;
+  }

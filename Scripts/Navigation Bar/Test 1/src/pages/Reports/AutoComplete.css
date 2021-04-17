@@ -1,0 +1,26 @@
+.searchcontainer {
+  border: 1px solid gray;
+  padding: 5px;
+  padding-left: 3%;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.search {
+  line-height: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+hr {
+  border-top: 1px solid rgba(216, 216, 216, 0.753);
+}
