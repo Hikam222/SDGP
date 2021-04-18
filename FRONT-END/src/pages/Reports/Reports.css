@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.reports {
+  margin: 3% 30% 0% 20%;
+  padding: 0% 0% 0% 0%;
+}
+
+#reportHeadding {
+  padding: 0% 0% 6% 40%;
+}
+
+.input-fields-3 {
+  padding: 5% 0% 1% 10%;
+}
+
+.quantity-tf,.colour-tf {
+  padding-bottom: 6%;
+}
+
+.search-bar-dropdown {
+  width: 20em;
+}
+
+#results {
+  position: absolute;
+}
+
+#search-bar {
+  width: inherit;
+}
+
+.btnSearch {
+  padding: 10px;
+}
+
+.colourAndQuantity {
+  padding: 5% 0% 0% 1%;
+}
+
+.TFDropdown {
+  padding: 2% 0%;
+}
+
+.type-search {
+  padding-left: 2%;
+}
+
+.submitbtn {
+  padding: 5% 0% 3% 42%;
+}
+
+form {
+  padding-left: 20%;
+}

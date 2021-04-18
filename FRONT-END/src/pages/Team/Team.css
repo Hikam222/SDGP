@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    
+  }
+
+.Team h1{
+    margin: 2% 0% 0% 0%;
+    padding: 0% 10% 0% 40%;
+    font-size:5rem;
+    background: lightgrey;
+
+  }
+  .Team .A-team-container{
+    margin-left: 15%;
+    padding: 2%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 5%;
+    width: 65%;
+    text-align: center;
+    height: 5%;
+    justify-content: right;
+    
+  }
+  
+  .Team .content{
+  width: 100%;
+    
+    background:cyan;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px blue;
+    overflow: hidden;
+  }
+  .Team .A-team-container .content .upper-container{
+    height: 100px;
+    background: linear-gradient(
+      to left,#33ccff 0%, #ff99cc 100%
+    );
+    
+  
+  }
+  
+
+/*.Team .A-team-container .content .image-container img{
+  background: rgb(76,190,235);
+  width: 30%;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: translate(95px,45px);
+  
+  }*/
+.Team  .A-team-container img{
+  border: 2px solid #8e00b9;
+  background: rgb(76,190,235);
+  width: 30%;
+  
+  height: 10%;
+  border-radius: 50%;
+  padding: 5px;
+ 
+  
+}
+.Team .A-team-container .content .lower-container {
+  margin-top: 20%;
+    height: 50%;
+  background: cyan;
+  text-align: center;
+  font-family: 'Titillium web', sans-serif;
+  
+  }
+  
+
+.Team .A-team-container .lower-container h3,h4,p{
+  margin:0;
+  padding: 0;
+}
+.Team .A-team-container .lower-container h3{
+color: #2f2d2e;
+font-weight: 600;
+font-size: 1.5rem;
+
+}
+.Team .A-team-container .lower-container h4{
+  color: #8d3176;
+  font-weight: 700;
+  font-size: 1rem;
+  
+  }
+  .Team .A-team-container .lower-container p{
+    margin:1rem;
+    text-align: justify;
+    color: #2f2d2e;
+    font-size: 0.9rem;
+    font-weight: 300;
+    }
+
+    .Team .A-team-container button{
+      margin: 1rem;
+      color: #271283;
+      font: bold;
+      background-color: white;
+      border: 2px solid #8e00b9;
+      padding: 0.6rem;
+      margin-top: 0;
+      border-radius: 6px;
+      transition-duration: 0.6s;
+      animation: ease-in-out;
+    }
+
+    .Team .A-team-container    button:hover{
+      background-image: linear-gradient(to left,#33ccff 0%, #ff99cc 100% );
+      transform: scale(1);
+      border: none;
+      color: white;
+
+    
+    }
