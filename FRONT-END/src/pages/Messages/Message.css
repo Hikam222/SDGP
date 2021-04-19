@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Milonga&family=Miltonian+Tattoo&family=New+Rocker&display=swap');
+
+
+.messages {
+ font-size: 14px; /*
+ background: linear-gradient(
+    to bottom,#33ccff 0%, #ff99cc 70%
+  );*/
+}
+.messages .container{
+    width:70%;
+    height: 20%;
+    padding: 1%;
+    margin: 2%;
+    margin-left: 10%;
+}
+.messages .contact-box{
+    margin-left: 10%;
+    display: flex;
+    background: linear-gradient(to bottom right, #ffffff 0%, #333300 100%);
+    padding: 1%;
+    margin: 2%;
+}
+.messages .contact{
+    flex-basis: 70%;
+    padding: 3% 4%;
+}
+.messages h1{
+    margin-bottom: 0.5%;
+    font-family: 'Allura', cursive;
+  font-size: 52px;
+  text-align: center;
+    font-weight: bolder;
+}
+.messages .container p{
+    margin-bottom: 1%;
+    margin-left: 2%;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    align-items: center;
+    color: darkslategray;
+}
+.messages .input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.messages .input-row .input-group{
+    flex-basis: 40%;
+}
+.messages input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 17px;
+}
+.messages textarea{
+    width: 100%;
+    border:1px solid #ccc;
+    outline: none;
+    padding:1px;
+    box-sizing: border-box;
+}
+.messages label{
+    margin-bottom: 0px;
+    display: flex;
+    color: #1c00b5;
+    align-items: center;
+}
+.messages img{
+    height: 40%;
+    width: 30%;
+    position: absolute;
+  bottom: 3%;
+  opacity: 0.5;
+  right: 1%;
+}
+.messages button{
+    background: #1c00b5;
+    width: 30%;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.messages .contact h3{
+    color: #1c00b5;
+    font-weight: 600%;
+    margin-bottom: 5%;
+}
