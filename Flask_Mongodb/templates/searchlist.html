@@ -7,32 +7,26 @@
 	<h1>{{h}}</h1>
 	<hr>
 	{% if todos[0] %}
-	<h3>Result of the Search : ToDO List</h3>
+	<h3>Result of the Search : Elastic List</h3>
 	<table>
 	    <tr id="row">
-	    	<td class="status">Status</td>
 	    	<td class="JobNo">JobNo</td>
 	    	<td class="ItemCode">ItemCode</td>
 	    	<td class="ColorGroup">ColorGroup</td>
 	    	<td class="waste_pecentage">waste_pecentage</td>
-		<td class="func">Delete</td>
-		<td class="func">Modify</td>
 	    </tr>
 		{% for todo in todos %}
 		<tr class="datas">
-			<td><a href="./done?_id={{ todo['_id'] }}"><input type="image" src="static/images/{{todo['done']}}.png" alt="Submit ME"></a></td>
 			<td class="JobNo">{{ todo["JobNo"] }}</td>
 			<td class="ItemCode">{{ todo["ItemCode"] }}</td>
 			<td class="ColorGroup">{{ todo["ColorGroup"] }}</td>
 			<td class="waste_pecentage">{{ todo["waste_pecentage"] }}</td>
-			<td class="func1"><a href="./remove?_id={{ todo['_id'] }}"><button type="submit">DELETE</button></a></td>
-			<td class="func1"><a href="./update?_id={{ todo['_id'] }}"><button type="submit">EDIT</button></a></td>
 		</tr>
 		{% endfor %}
 	{% else %}
 		<h4>No Result Found !!</h4>
 	{% endif %}
 	</table>
-	<a href="/">Return to TaskList</a>
+	<a href="/">Return to Main</a>
 </body>
 </html>
