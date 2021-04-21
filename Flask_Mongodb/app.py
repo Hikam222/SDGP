@@ -36,7 +36,6 @@ def lists ():
 @app.route("/search", methods=['GET'])
 def search():
 	#Searching a Task with various references
-
 	key=request.values.get("key")
 	refer=request.values.get("refer")
 	if(key=="_id"):
