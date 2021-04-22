@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Milonga&family=Miltonian+Tattoo&family=New+Rocker&display=swap');
+.messages {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Allura', cursive; 
+}
+.messages .contact{
+    /*position: relative;*/
+    min-height: 100vh;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #ffffff 0%, #333300 100%);
+    background-size: cover;
+}
+.messages .contact .content h1{
+font-family:'Allura', cursive;
+font-size: 45px;
+}
+.messages .contact .content{
+    max-width: 100%;
+    text-align: center;
+    font-size: large;
+}
+.messages .contact .content h2{
+   font-size: 36px;
+   font-weight: 500;
+    color: #fff;
+}
+.messages .contact .content p{
+    font-weight: 300;
+     color: rgb(45, 40, 85);
+ }
+.messages .container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+.messages  .container .contactInfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.messages .container .contactInfo .box{
+    padding: 3% 10%;
+    display: flex;
+}
+.messages .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(70, 55, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.messages .contactInfo .box .text{
+    display: flex;
+    margin-left: 5%;
+    font-size: 16px;
+    color: rgb(36, 23, 23);
+    flex-direction: column;
+    font-weight: 300;
+}
+.messages .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #6217a0;
+}
+.messages .contactForm{
+    width: 40%;
+    padding: 4%;
+    background: #c6d7ec;
+}
+.messages .contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.messages .contactForm .inputBox{
+    position:relative;
+    width: 100%;
+    margin-top: 2%;
+}
+.messages .contactForm .inputBox input,
+.messages .contactForm .inputBox textarea
+{
+    width: 100%;
+    background: #c6d7ec;
+    padding:5% 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.messages .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5% 0;
+    font-size: 16px;
+    margin: 1% 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.messages .contactForm .inputBox input:focus ~ span,
+.messages .contactForm .inputBox input:valid ~ span,
+.messages .contactForm .inputBox textarea:focus ~ span,
+.messages .contactForm .inputBox textarea:valid ~ span
+{
+    color:#e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.messages .contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo, .contactForm{
+        width: 100%;
+    }
+}

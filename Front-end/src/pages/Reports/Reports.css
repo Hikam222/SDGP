@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.reports {
+  padding: 3% 30% 10% 20%;
+
+}
+
+#reportHeadding {
+  padding: 0% 0% 6% 40%;
+}
+
+.input-fields-3 {
+  padding: 5% 0% 1% 10%;
+}
+
+.quantity-tf,.colour-tf {
+  padding-bottom: 6%;
+}
+
+.search-bar-dropdown {
+  width: 20em;
+}
+
+#results {
+  position: absolute;
+}
+
+#search-bar {
+  width: inherit;
+}
+
+.btnSearch {
+  padding: 10px;
+}
+
+.colourAndQuantity {
+  padding: 5% 0% 0% 1%;
+}
+
+.TFDropdown {
+  padding: 2% 0%;
+}
+
+.type-search {
+  padding-left: 2%;
+}
+
+.submit-btn {
+  padding: 5% 0% 5% 42%;
+}
+
+form {
+  padding-left: 20%;
+}
+
+.first-grid{
+  padding: 5% 5% 5% 15%;
+}
+
+.kg-vise,.percentage-vise{
+  text-align: center;
+}
+
+.percentage-vise{
+  padding-top: 2%;
+}
+
+.back-button{
+  padding: 0% 0% 10% 60%;
+}
+
+#suggestion{
+
+}
+
+input {
+  width: 60%; /* When specifying this, you can use both px and % */
+  height: 40px;
+}
+
+.searchcontainer input[type=text] {
+  border: 2px solid #AFB5B7;
+  border-radius: 5px;
+  /*background-image: url('./search-icon.png');*/
+  /*background-repeat: no-repeat;*/
+  /*position: relative;*/
+}
+
+.searchcontainer input[type=text]:focus {
+  background-color: #E6EDED;
+}
+
+/*.searchcontainer input[type=text]:hover{*/
+/*  border: #0033cc;*/
+/*}*/
