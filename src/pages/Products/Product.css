@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Milonga&family=Miltonian+Tattoo&family=New+Rocker&display=swap');
+
+.product-heading{
+    padding: 2% 0% 2% 0%;
+}
+
+.product-heading h2{
+    font-weight: bolder;
+  font-family:'Allura', cursive;
+  font-size: 52px;
+  
+}
+.product{
+    background: linear-gradient(to bottom right, #ffffff 0%, #333300 100%);
+   margin: 0%;
+}
+
+.table-padding{
+    padding-left: 2%;
+    padding-right: 2%;
+}
